@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+Typography
+h1, h2, h3 {
+  @apply font-semibold; /* Make headings slightly bolder */
+}
+
+h1 {
+  @apply text-2xl; /* Larger font size for main headings */
+}
+
+body {
+  @apply leading-relaxed; /* Relaxed line height for better readability */
+}
+
+/* Spacing & Alignment */
+.container {
+  @apply mx-auto py-8 px-4 max-w-xl; /* Center main content and apply padding */
+}
+
+/* Color Scheme */
+.primary-btn {
+  @apply bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300; /* Blue primary button with hover effect */
+}
+
+.link {
+  @apply text-blue-500 hover:underline hover:text-blue-600 transition duration-300; /* Blue link with hover effect */
+}
+
+/* Interactive Elements */
+.button, input, textarea {
+  @apply rounded transition duration-300; /* Rounded corners and smooth transition effects */
+}
+
+.button:hover, input:hover, textarea:hover {
+  @apply shadow-md; /* Slight shadow on hover for depth */
+}
+
