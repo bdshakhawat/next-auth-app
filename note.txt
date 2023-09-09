@@ -1,2 +1,1 @@
-
 https://next-auth-apps.netlify.app/login
