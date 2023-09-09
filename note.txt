@@ -1,1 +1,2 @@
-https://github.com/bdshakhawat/next-auth-app
+
+https://next-auth-apps.netlify.app/login
