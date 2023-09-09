@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
   <img src="./public/image/login.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Next Auth  Project</b></h3>
+  <h3><b>Next Authentication  Project</b></h3>
 
 </div>
 
